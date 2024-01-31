@@ -5,18 +5,21 @@
     background: none;
 }
 .div1 {
-    height: 15px;
+    height: 5px;
     background-color: #4ec19e;
   }
   .div2 {
-    height: 15px;
+    height: 5px;
     background-color: #0c0b0b;
   }
   .div3 {
-    height: 15px;
+    height: 5px;
     background-color: #ff7156;
   }
   .div4 {
-    height: 15px;
+    height: 5px;
     background-color: #b68de2;
+  }
+  .bars-container div{
+    margin-bottom: 10px;
   }
