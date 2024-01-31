@@ -1,0 +1,33 @@
+<section class="learning-time">
+    <div class="d-flex align-items-baseline">
+        <h3>Time spent on learning</h3>
+        <!-- dropdown.component.html -->
+        <button mat-button [matMenuTriggerFor]="menu" class="drop-btn">Last week <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onItemSelected('Option 1')">Option 1</button>
+        <button mat-menu-item (click)="onItemSelected('Option 2')">Option 2</button>
+        <button mat-menu-item (click)="onItemSelected('Option 3')">Option 3</button>
+        </mat-menu>
+                    
+    </div>
+    <div class="hint d-flex justify-content-between">
+        <div class="dot-orange">Vocabulary</div>
+        <div class="dot-purple">Grammar</div>
+        <div class="dot-blue">Listening</div>
+        <div class="dot-gray">Writing</div>
+    </div>
+
+    <div *ngFor="let day of getObjectKeys(dataset)" class="day-container">
+        <div class="day-title">{{ day }}</div>
+        <div fxLayout="row" fxLayoutGap="3px" class="bars-container">
+          <div fxFlex="15" class="div1" [style.height]="getHeight(dataset[day].Vocabulary)" ></div>
+          <div fxFlex="30" class="div2" [style.height]="getHeight(dataset[day].Grammar)"></div>
+          <div fxFlex="20" class="div3" [style.height]="getHeight(dataset[day].Listening)"></div>
+          <div fxFlex="35" class="div4" [style.height]="getHeight(dataset[day].Writing)"></div>
+        </div>
+      </div>
+      
+      
+</section>

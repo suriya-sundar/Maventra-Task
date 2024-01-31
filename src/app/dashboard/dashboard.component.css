@@ -1,0 +1,26 @@
+.logout-section{
+    background: #fff;
+}
+mat-sidenav{
+    width: 200px;
+    padding: 25px;
+}
+.menus li {
+    line-height: 48px;
+}
+.menu-links {
+    column-gap: 20px;
+}
+section.pro-pack {
+    position: absolute;
+    bottom: 15%;
+}
+button.Upgrade {
+    display: block;
+    margin: auto;
+    background: #5E81F4;
+    color: #fff;
+    padding: 5px 22px;
+    border-radius: 7px;
+    border: none;
+}

@@ -1,0 +1,75 @@
+
+<mat-sidenav-container class="menu-container">
+    <mat-sidenav #sidenav mode="side" opened [position]="'start'" class="menu-sidenav">
+        <div class="sidebar">
+            <div class="menus">
+                <li class="d-flex align-items-center menu-links">
+                    <div class="block">
+                        <mat-icon>dashboard</mat-icon>
+                    </div>
+                    <a href="#" class="links">Dashboard</a>
+                </li>
+                <li class="d-flex align-items-center menu-links">
+                    <div class="block">
+                        <mat-icon>folder_open</mat-icon>
+                    </div>
+                    <a href="#" class="links">Classes</a>
+                </li>
+                <li class="d-flex align-items-center menu-links">
+                    <div class="block">
+                        <mat-icon> insert_drive_file</mat-icon>
+                    </div>
+                    <a href="#" class="links">Resources</a>
+                </li>
+                <li class="d-flex align-items-center menu-links">
+                    <div class="block">
+                        <mat-icon>date_range</mat-icon>
+                    </div>
+                    <a href="#" class="links">Learning Plan</a>
+                </li>
+                <li class="d-flex align-items-center menu-links">
+                    <div class="block">
+                        <mat-icon> message</mat-icon>
+                    </div>
+                    <a href="#" class="links">Chat</a>
+                </li>
+                <li class="d-flex align-items-center menu-links">
+                    <div class="block">
+                        <mat-icon>settings</mat-icon>
+                    </div>
+                    <a href="#" class="links">Setting</a>
+                </li>
+            </div>    
+            <section class="pro-pack">
+                <p class="para text-center">Upgrade to <b>PRO</b> for<br>more resources</p>
+                <button class="Upgrade">Upgrade</button>
+            </section>
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="ham">
+
+            <div class="d-flex align-items-center collapse-menu">
+                <img src="../../assets/img/logo.png" alt="" *ngIf="sidenav.opened"
+                    class="collapse-sidenav d-flex align-items-center m-2" width="120px" height="auto"
+                    (click)="animateSidenav()">
+                <p class="m-0 p-2" *ngIf="sidenav.opened" (click)="animateSidenav()"></p>
+            </div>
+
+            <div class="d-flex align-items-center collapse-menu">
+                <img src="../../assets/img/logo.png" alt="" *ngIf="!sidenav.opened"
+                    class="expand-sidenav d-flex align-items-center m-2" width="120px" height="auto"
+                    (click)="animateSidenav()">
+                <p class="m-0 p-2"></p>
+            </div>
+
+
+        </div>
+        <div class="content d-flex">
+            <div class="col-9 master-section"><app-master></app-master></div>
+            <div class="col-3 logout-section"><app-logout-column></app-logout-column></div>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

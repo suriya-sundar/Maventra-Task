@@ -1,0 +1,24 @@
+<section class="results">
+    <div class="d-flex align-items-baseline justify-content-between">
+        <h3>Latest results</h3>
+        <a href="#" class="d-flex">More <mat-icon>arrow_right_alt</mat-icon>
+        </a>
+    </div>
+    <div class="result-tags">
+ 
+        <li *ngFor="let quiz of title" class="d-flex justify-content-between align-items-baseline line">
+            <div class="units">
+              <span>{{ quiz.quizTitle }}</span>
+            </div>
+            <div class="d-flex">
+                <div class="progress">
+                    <mat-progress-bar mode="determinate" [value]="calculatePercentage(quiz.score)"></mat-progress-bar>
+                  </div>
+                  <div class="score">
+                      {{quiz.score}}
+                  </div>
+            </div>
+          </li>
+       
+    </div>
+</section>

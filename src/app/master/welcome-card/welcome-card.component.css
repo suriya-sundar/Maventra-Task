@@ -1,0 +1,33 @@
+.onpage {
+    font-size: 16px;
+    font-weight: 500;
+} 
+.search{
+    background: rgba(184, 220, 252, 0.474);
+    padding: 5px;
+    border-radius: 5px;
+}
+.date{
+    margin: 5px 5px 0px 5px;
+}
+.search mat-icon{
+    color: rgb(32, 122, 206);
+}
+.profile-card{
+    background: #F8E5E9;
+    padding: 42px 50px;
+    border-radius: 25px;
+    margin: 10px;
+    position: relative;
+}
+.profile-card h3{
+    color: salmon;
+    font-size: 20px;
+    font-weight: 500;
+}
+.profile-card:after{
+    position: absolute;
+    content: url(../../../assets/img/Anna.png);    
+    top: -42px;
+    right: 76px;
+}

@@ -1,0 +1,29 @@
+.lists h2 {
+    margin: 0px;
+    background: aliceblue;
+    padding: 8px 12px;
+    border-radius: 14px;
+}
+.lessons {
+    margin: 0px 20px;
+}
+.lesson-sub {
+    font-size: 12px;
+    color: #a2a2a2;
+}
+.icon mat-icon{
+    color: tomato;
+}
+.icon {
+    background: #ff63472b;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+.icon-mail mat-icon{
+    color: #587FF3;
+}
+.icon-mail {
+    background: #EEF2FD;
+    padding: 10px 12px;
+    border-radius: 10px;
+}

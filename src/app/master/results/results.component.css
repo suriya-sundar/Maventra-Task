@@ -1,0 +1,20 @@
+section.results {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+.progress{
+    display: block;
+    width: 100px;
+    margin-right: 13px;
+    height: 3px;
+}
+.result-tags li {
+    padding: 10px 10px;
+}
+li.line{
+    border-bottom: 1px solid #cfcfcf;
+}
+.score {
+    margin-top: -9px;
+}

@@ -1,0 +1,41 @@
+h3, h2, mat-icon{
+    margin: 0px;
+    color: #fff;
+}
+.heading h3, mat-icon.right-arrow{
+    color: #000;
+}
+.lists {
+    position: relative;
+}
+.blue {
+    background: #4D4CAC;
+    border-radius: 10px;
+    padding: 10px;
+}
+.purple {
+    background: #9698D6;
+    border-radius: 10px;
+    padding: 10px;
+}
+.salmon {
+    background: #FF808B;
+    border-radius: 10px;
+    padding: 10px;
+}
+.lists h2 {
+    background: #ffffff2e;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.lessons {
+    margin: 12px;
+}
+.lists mat-icon{
+    position: absolute;
+    right: 10%;
+}
+.title {
+    color: #dfdfdf;
+}
