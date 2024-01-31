@@ -22,11 +22,11 @@
     <div *ngFor="let day of getObjectKeys(dataset)" class="day-container">
         <div class="day-title">{{ day }}</div>
         <div fxLayout="row" fxLayoutGap="3px" class="bars-container">
-          <div fxFlex="15" class="div1" [style.height]="getHeight(dataset[day].Vocabulary)" ></div>
-          <div fxFlex="30" class="div2" [style.height]="getHeight(dataset[day].Grammar)"></div>
-          <div fxFlex="20" class="div3" [style.height]="getHeight(dataset[day].Listening)"></div>
-          <div fxFlex="35" class="div4" [style.height]="getHeight(dataset[day].Writing)"></div>
-        </div>
+            <div fxFlex="{{ getHeight(dataset[day].Vocabulary) }}" class="div1" [style.height]="" ></div>
+            <div fxFlex="{{ getHeight(dataset[day].Grammar) }}" class="div2" [style.height]=""></div>
+            <div fxFlex="{{ getHeight(dataset[day].Listening) }}" class="div3" [style.height]=""></div>
+            <div fxFlex="{{ getHeight(dataset[day].Writing) }}" class="div4" [style.height]=""></div>
+          </div>
       </div>
       
       
